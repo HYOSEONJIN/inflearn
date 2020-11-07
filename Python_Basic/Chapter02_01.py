@@ -27,6 +27,7 @@ print('Web Site')
 
 #File 옵션
 import sys
+
 print('Learn Pythone', file=sys.stdout) #stdout=콘솔아웃
 print()
 
@@ -48,3 +49,24 @@ print('{:*>10}'.format('nice')) # 공백이 *로 채워진다
 print('{:^10}'.format('nice')) # 중앙정렬
 
 print('%.5s' % ('nice'))
+print('%.5s' % ('pythonstudy'))
+print('{:10.5}'.format('pythonstudy'))
+print()
+
+
+# %d
+print('%d %d' % (1,2))
+print('{} {}'.format(1,2))
+print('%4d' % (42))
+print('{:4d}'.format(42))
+print()
+
+
+# %f
+
+print('%f' % (12.123445677777)) #소수 여섯재 짜리까지 나온다.
+print('%03.10f' % (10002.123445677777))
+print('{:f}'.format(12.123445677777))
+print('%06.3f' % (12.123445677777))
+print('{:06.2f}'.format(12.123445677777))
+print()
