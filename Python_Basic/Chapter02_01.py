@@ -33,4 +33,19 @@ print()
 #format 사용 (d=정수, s=문자열, f=실수, o, x)
 print('%s %s' %('one', 'two')) # 정확하게 문자열만 와야한다
 print('{} {}'.format('one','2')) #포맷함수가 내부적으로 String인지 숫자인지 구별해줌
-print('{1} {0}'.format('one','two'))
+print('{1} {0}'.format('one','two')) #INDEX
+
+print()
+
+# %s
+print('%10s' % ('nice')) #숫자가오면 자릿수를 의미
+print('{:>10}'.format('nice'))
+
+print('%-10s' % ('nice')) #음수가 오면 오른쪽으로 채운다
+print('{:10}'.format('nice')) #생략하면 오른쪽을 공백으로 채운다
+
+print('{:*>10}'.format('nice')) # 공백이 *로 채워진다
+print('{:^10}'.format('nice')) # 중앙정렬
+
+print('%.5s' % ('nice'))
+4:57
