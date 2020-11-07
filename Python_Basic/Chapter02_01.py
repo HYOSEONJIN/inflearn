@@ -23,3 +23,6 @@ print()
 print('welcome to', end='      ')
 print('IT News', end='')
 print('Web Site')
+
+#File 옵션
+impor
