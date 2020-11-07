@@ -48,4 +48,3 @@ print('{:*>10}'.format('nice')) # 공백이 *로 채워진다
 print('{:^10}'.format('nice')) # 중앙정렬
 
 print('%.5s' % ('nice'))
-4:57
