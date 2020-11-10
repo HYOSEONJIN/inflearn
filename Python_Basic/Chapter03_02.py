@@ -79,7 +79,7 @@ print()
 
 # 문자열 함수 (upper, iaalnum, startswith, count, endswith, isalpha ... )
 print("Capitalize : ", str_o1.capitalize()) #첫글자를 대문자로 바꿔준다.
-print("endswith? : ", str_o2.endswith("e")) #마지막 문자가 무엇인지 체크 (ex 마침표)
+print("endswith? : ", str_o2.endswith("e")) #마지막 문자가 무엇인지 체크 boolean (ex 마침표)
 print("replace : ", str_o1.replace("py","PPYY")) #바꿔줌
 print("sorted : ", sorted(str_o1)) # 리스트 형태로 반환
 print("split : ", str_o4.split(" ")) # 기준을 정해서 그것을 기준으로 리스트로 반환
