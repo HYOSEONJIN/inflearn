@@ -55,6 +55,8 @@ print('f  - ', f.get('city'))
 print('f  - ', f.get('age'))
 print()
 
+
+
 # 딕셔너리 추가
 print('>>>>>>>')
 a['address'] = 'seoul'
@@ -117,8 +119,10 @@ print('a  - ', 'city' in b)
 
 #수정.
 print('>>>>>>>')
+
 a['test']='test_dict'
 print('a  - ', a)
+
 a['test']='test_dict2'
 print('a  - ', a)
 
