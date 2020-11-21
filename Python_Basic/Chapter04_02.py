@@ -131,5 +131,5 @@ for i in range(2,10):
 name2 = 'Aceman'
 print('reversed :', reversed(name2))
 print('reversed :', list(reversed(name2)))
-print('Tupld :', tuple(reversed(name2)))
+print('Tuple :', tuple(reversed(name2)))
 print('set :', set(reversed(name2))) #순서X
