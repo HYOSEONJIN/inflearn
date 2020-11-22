@@ -117,5 +117,27 @@ nested_func(100)
 def mul_func(x,y):
     return x*y
 
+lambda x, y : x*y
+
 a = lambda x, y : x*y
 print(a(5,6))
+
+def mul2_func(x,y):
+    return x*y
+###############################
+# 일반적 함수 > 변수 할당.
+q = mul2_func(10,50)
+print(q)
+print(mul2_func(10,50))
+mul2_func_var = mul_func
+print(mul2_func_var(20,50))
+
+# 간단한 것은 람다식으로 사용하는 것이 편함.
+lamdbd_mul2_func = lambda x,y:x*y
+print(lamdbd_mul2_func(50,50))
+
+def func_final(x, y, func):
+    print('>>>>', x * y * func(100,100))
+
+func_final(10,20, mul2_func_var)
+func_final(10,20, lambda x,y:x*y) #이름이 없기에 즉시실행!
