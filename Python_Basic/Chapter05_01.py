@@ -113,3 +113,9 @@ nested_func(100)
 # 함수는 객체 생성 > 리소스(메모리) 할당
 # 람다는 즉시 실행 함수 (heap초기화) > 메모리 heap초기화
 # 남발 시 가독성이 오히려 감소.
+
+def mul_func(x,y):
+    return x*y
+
+a = lambda x, y : x*y
+print(a(5,6))
