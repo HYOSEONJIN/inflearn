@@ -27,7 +27,7 @@ for i, name in enumerate(['abc', 'bcd', 'efg']):
 
 def conv_pos(x):
     return abs(x) > 2
-    
+
 print(list(filter(conv_pos, [1, -3, 2, 0, -5, 6])))
 print(list(filter(lambda x: abs(x) > 2, [1, -3, 2, 0, -5, 6])))
 
@@ -50,7 +50,7 @@ print(min('python study'))
 # map : 반복가능한 객체 요소를 지정한 함수 실행 후 추출
 def conv_abs(x):
     return abs(x)
-    
+
 print(list(map(conv_abs,[1,-3,2,0,-5,6])))
 print(list(map(lambda x:abs(x),[1,-3,2,0,-5,6])))
 
@@ -58,16 +58,15 @@ print(list(map(lambda x:abs(x),[1,-3,2,0,-5,6])))
 print(pow(2,10))
 
 # range : 반복가능한 객체(Iterable) 반환
-print(range(1,10,2))
-print(list(range(1,10,2)))
-print(list(range(0,-15,-1)))
+print(list(range(1,10,2))) # 1 3 5 7 9
+print(list(range(0,-15,-1))) # 0 ~ -14
 
 # round : 반올림
 
 print(round(6.5781, 2))
 print(round(5.6))
 
-# sorted : 반복가능한 객체(Iterable) 정렬 후 반환 
+# sorted : 반복가능한 객체(Iterable) 정렬 후 반환
 
 print(sorted([6,7,4,3,1,2]))
 a = sorted([6,7,4,3,1,2])
@@ -88,5 +87,5 @@ print(type([]))
 
 # zip : 반복가능한 객체(Iterable)의 요소를 묶어서 반환
 
-print(list(zip([10,20,30],[40,50,777])))
+print(list(zip([10,20,30],[40,50,777]))) #짝이 맞지 않으면 반환되지않음 3:2 면 2개만.
 print(type(list(zip([10,20,30],[40,50,777]))[0]))
