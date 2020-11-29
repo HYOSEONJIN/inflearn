@@ -71,45 +71,45 @@ name = ['kim', 'lee', 'park']
 
 # 예제1
 
-# try :
-#     z = 'kim' #'Cho' 예외처리가 된다.
-#     x = name.index(z)
-#     print('{} Found it {} in name'.format(z,x+1))
-# except   ValueError :
-#     print('not fount it = occurred ValueError!')
-# else :
-#     print('ok! else.')
-#
-# print()
+try :
+    z = 'kim' #'Cho' 예외처리가 된다.
+    x = name.index(z)
+    print('{} Found it {} in name'.format(z,x+1))
+except   ValueError :
+    print('not fount it = occurred ValueError!')
+else :
+    print('ok! else.')
+
+print()
 
 
 # 예제2
 
-# try :
-#     z = 'kim' #'Cho' 예외처리가 된다.
-#     x = name.index(z)
-#     print('{} Found it {} in name'.format(z,x+1))
-# except : # except Exception : 와 같다.
-#     print('not fount it = occurred')
-# else :
-#     print('ok! else.')
-#
-# print()
+try :
+    z = 'kim' #'Cho' 예외처리가 된다.
+    x = name.index(z)
+    print('{} Found it {} in name'.format(z,x+1))
+except : # except Exception : 와 같다.
+    print('not fount it = occurred')
+else :
+    print('ok! else.')
+
+print()
 
 
 # 예제3
 
-# try :
-#     z = 'cho' #'Cho' 예외처리가 된다.
-#     x = name.index(z)
-#     print('{} Found it {} in name'.format(z,x+1))
-# except Exception as e :
-#     print(e) #'cho' is not in list
-#     print('not fount it = occurred')
-# else :
-#     print('ok! else.')
-# finally :
-#     print('ok! finally!')
+try :
+    z = 'cho' #'Cho' 예외처리가 된다.
+    x = name.index(z)
+    print('{} Found it {} in name'.format(z,x+1))
+except Exception as e :
+    print(e) #'cho' is not in list
+    print('not fount it = occurred')
+else :
+    print('ok! else.')
+finally :
+    print('ok! finally!')
 
 print()
 
