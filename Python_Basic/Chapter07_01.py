@@ -123,7 +123,7 @@ try :
     if a == 'kim' :
         print('Ok! pass')
     else :
-        raise ValueError #강제로 발생!
+        raise ValueError #강제로 발생시키는에러.
 except ValueError :
     print('Occurred! Exception!')
 else :
