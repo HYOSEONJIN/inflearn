@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://HYOSEON:adad11@hyseonbolierplate.9vvek.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
+mongoose.connect('mongodb+srv://HYOSEON:비번@hyseonbolierplate.9vvek.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
     useNewUrlParser: true, useUnifiedTopology:true, useCreateIndex:true, useFindAndModify :false
 }).then(() => console.log('mongoDB Connected..'))
  .catch(err => console.log(err))
@@ -28,8 +28,11 @@ app.post('/register', (req, res) => {
     const user = new User(req.body)
 
     user.save((err, userInfo) =>{
-        if(err) return res.json({success :false, err})
-        return res.status(200).json({success : true
+        if(err) return res.json({
+            success :false, err
+        })
+        return res.status(200).json({
+            success : true
         })
     })
 })
