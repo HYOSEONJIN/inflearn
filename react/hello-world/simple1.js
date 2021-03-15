@@ -21,7 +21,7 @@ function Container() {
     onClick: () => setCount(count + 1)
   }, "\uC99D\uAC00"), /*#__PURE__*/React.createElement("button", {
     onClick: () => setCount(count - 1)
-  }, "\uAC10\uC18C!")));
+  }, "\uAC10\uC18C")));
 }
 
 ;

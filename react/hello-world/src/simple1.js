@@ -21,7 +21,7 @@ function Container(){
         <span style={{marginRight : 10}}>{count}</span>
         <button onClick={()=> setCount(count +1)}>증가</button>
         <button onClick={()=> setCount(count -1)}>
-            감소!</button>
+            감소</button>
             </div>
         </div>
 
