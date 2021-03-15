@@ -1,15 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
+import ChildComponent from './03/ChildComponent';
 
-class App extends Component{
-  render(){
-    return(
-      <div>
-        <img src="http://www.easyspub.co.kr/images/logo_footer.png"/>
-      <div>안녕하세요</div>
-      </div>
-    )
+class App extends Component {
+  render() {
+    const array = [1, 2, 3];
+    const obj = { name: '제목', age: 30 };
+    const node = <h1>노드</h1>;
+    const func = () => {
+      console.log('메시지');
+    };
+    return (
+      <ChildComponent
+        boolValue={true}
+        numValue={1}
+        arrayValue={array}
+        objValue={obj}
+        nodeValue={node}
+        funcValue={func}
+      />
+    );
   }
 }
 
