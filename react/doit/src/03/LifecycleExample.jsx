@@ -17,6 +17,7 @@ class LifecycleExample extends React.Component {
 
   componentDidMount() {
     console.log("ComponentDidMount 호출");
+    this.forceUpdate();
   }
 
   componentDidUpdate() {
@@ -35,7 +36,8 @@ class LifecycleExample extends React.Component {
 
   shouldComponentUpdate() {
     console.log("shouldComponentUpdate 호출");
-    return true;
+    // false로 변경
+    return false;
   }
 
   render() {
